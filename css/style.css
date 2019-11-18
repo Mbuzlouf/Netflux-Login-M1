@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Cairo';
+  src: url('../cairo-regular-webfont.woff2') format('woff2'),
+       url('../cairo-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: #191919;
+  color: white;
+  direction: rtl;
+  font-family: 'Cairo', sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login {
+  margin: 5vh auto 0;
+  position: relative;
+  height: 90vh;
+  max-width: 87.5rem;
+}
+
+.logo {
+  position: absolute;
+  width: 252px;
+  height: 56px;
+  left: 42.62%;
+  top: 13%;
+  bottom: 83.89%;
+  font-size: 28px;
+  line-height: 28px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 21px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1%;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-field input {
+  margin-bottom: 2%;
+  margin-top: 3%;
+  width: 650px;
+  height: 80px;
+  font-size: 21px;
+}
+
+.form-field input[type="email"], .form-field input[type="password"] {
+  background: rgba(255, 255, 255, 0.07);
+  border: none;
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+}
+
+.form-field input[type="submit"] {
+  background: #E6B31E;
+  color: #FFFFFF;
+  border: none;
+  transition: background 0.5s;
+}
+
+.form-field input[type="submit"]:hover {
+  background: rgb(255, 194, 11);
+}
+
+.link {
+  align-self: center;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 28px;
+  margin-top: 3.5%;
+  transition: color 0.5s;
+}
+
+.link:hover {
+  color: #FFFFFF;
+}
